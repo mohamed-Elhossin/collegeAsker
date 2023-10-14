@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media print {
+    * {
+        margin: 0px;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+
+    .fi-header {
+        display: none !important;
+    }
+
+    .fi-topbar {
+        display: none;
+    }
+
+    .grid,
+    .fi-main {
+        padding: 5px;
+    }
+
+    .fi-sidebar-nav{
+        display: none !important;
+    }
+
+
+    .fi-sidebar-open{
+        display: none !important;
+    }
+
+    .bg-gray-950\/50{
+        background-color: unset !important;
+    }
+
+   .print {
+        display: none !important;
+    }
+
+
+}
